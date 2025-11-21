@@ -1,6 +1,6 @@
 # MicroTrace
 
-MicroTrace is a deliberately small FastAPI service that demonstrates how to roll structured logging, Prometheus metrics, request correlation, OpenTelemetry tracing, and background work co-ordination into one cohesive developer experience. The goal is to give interviewers and hiring managers a tangible artifact that proves you understand production-grade observability and service hygiene—not just frameworks.
+MicroTrace is a deliberately small FastAPI service that demonstrates how to roll structured logging, Prometheus metrics, request correlation, OpenTelemetry tracing, and background work co-ordination into one cohesive developer experience.
 
 ## System Architecture
 
