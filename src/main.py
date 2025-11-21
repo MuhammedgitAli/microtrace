@@ -18,6 +18,7 @@ from prometheus_client import (
 from .internal.worker import AnalysisResult, WorkerService
 from .logging_config import configure_logging
 from .middleware import MetricsMiddleware, RequestIDMiddleware
+from .tracing import instrument_fastapi
 
 
 configure_logging()
@@ -51,6 +52,7 @@ app.add_middleware(
     request_latency=latency_histogram,
     error_counter=error_counter,
 )
+instrument_fastapi(app)
 
 worker_service = WorkerService()
 
